@@ -1,5 +1,5 @@
 # Git Commands 
-## Log
+## Log lOGGING
 
 1) git log
 2) git log --decorate --graph --oneline --all
