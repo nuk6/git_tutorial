@@ -17,7 +17,7 @@
 5) git diff HEAD HEAD^(last commit -1)
 6) git diff master origin/master
 
-##Branching
+## Branching
 1) git b my_new_branch
 2) git ch my_new_branch
 3) git b -m curr_name new_name
