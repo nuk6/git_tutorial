@@ -1,4 +1,4 @@
-# Git Commands in depth
+# Git Commands 
 ## Log
 
 1) git log
