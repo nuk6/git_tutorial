@@ -64,3 +64,31 @@ stashing into a branch
 12) git push origin master --tags (will push any tag thats missing)
 13) git push origin :myTag
  will delete remote myTag, not on local
+ 
+ ## GitLab
+ ```yaml
+ stages:
+  - building
+  - testing
+
+test the car:
+  stage: testing
+  script:
+    - ls
+    - test -f build/car.txt
+    - cd build
+    - grep "chassis" car.txt
+    - grep "engine" car.txt
+
+build the car:
+  stage: building
+  script:
+    - mkdir build
+    - cd build
+    - touch car.txt
+    - echo "chassis" >> car.txt
+    - echo "engine" >> car.txt
+  artifacts:
+    paths:
+      - build/
+ ```
